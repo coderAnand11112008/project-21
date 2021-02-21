@@ -32,7 +32,7 @@ function draw() {
     background = "white";
     //create edgeSprite
     createEdgeSprites();
-    ball.bounceoff(edges);
+    ball.bounceOff(edges);
 
     //add condition to check if box touching surface and make it box
     if(block1.isTouching(ball)){
@@ -48,7 +48,7 @@ function draw() {
     if(block3.isTouching(ball)){
         ball.shapeColor = "pink";
     }
-    if(block3.isTouching(ball)){
+    if(block4.isTouching(ball)){
         ball.shapeColor = "yellow";
     }
     drawSprites();
